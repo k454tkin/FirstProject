@@ -1,12 +1,18 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
-  "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML>
 <html>
  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Тег А, атрибут charset</title>
+  <meta charset="utf-8">
+  <title>Тег А, атрибут target</title>
+  <style>
+    a[type="video/mp4"] {
+     background: url(muromec.jpg) no-repeat 0 2px; /* Фоновый рисунок */
+     padding-left: 20px; /* Отступ слева */
+    }
+   </style>
  </head>
  <body>
-  <p><a href="http://koi8.pp.ru/" charset="koi8-r">
-    Сайт, посвященный кодировке KOI8</a></p>
+  <p><a href="a.html" target="_blank">Открыть в новом окне</a></p>
+  <p><a href="1.html">Ссылка на страницу</a></p>
+  <p><a href="video/snowman.mp4" type="video/mp4">Ссылка на видеоролик</a></p>
  </body>
 </html>
