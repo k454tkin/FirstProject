@@ -20,8 +20,9 @@
     Относительные ссылки, как следует из их названия, построены относительно текущего документа или корня сайта.
   </p>
   <h3>Атрибуты:</h3>
+  <ol>
   <p>
-    1) Accesskey <br>
+    <li>Accesskey <br>
     Синтаксис - &lt;a accesskey="S"&gt; ... &lt;/a&gt; <br>
     <p><a href="https://cdn.pixabay.com/photo/2018/07/24/19/08/vr-3559837_1280.jpg" accesskey="S">
       Посмотрите на фотографию!
@@ -33,10 +34,26 @@
         Safari: Alt + S <br>
         Firefox: Shift + Alt + S <br>
       </p>
+    </li>
   <p>
-    2) Сharset <br>
+    <li> Сharset <br>
     Синтаксис - &lt;a charset="кодировка"&gt; ... &lt;/a&gt; <br>
+    <p><a href="http://koi8.pp.ru/" charset="koi8-r">
+      Сайт, посвященный кодировке KOI8</a></p>
     Используется для указания кодировки текста, на который ведет ссылка.
       </p>
+    </li>
+  <p>
+    <li> Coords <br>
+      Атрибут coords применяется к ссылкам, которые располагаются внутри контейнера &lt;object&gt;.
+      Совместно с атрибутом shape создает «горячую область», которая служит ссылкой. <br>
+      Синтаксис - &lt;object usemap="#идентификатор"&gt; <br>
+      &lt;map name="идентификатор"&gt;<br>
+      &lt;a href="URL" coords="координаты"&gt;...&lt;/a&gt;<br>
+      &lt;/map&gt;<br>
+      &lt;/object&gt;
+    </li>
+  </p>
+    </ol>
 </body>
 </html>
