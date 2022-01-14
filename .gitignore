@@ -1,2 +1,5 @@
 # slash at the end means a folder
 Images/
+# folder "Images", not file "Images"
+Public/HTML/test.html
+# Public/HTML/test.html
