@@ -59,6 +59,16 @@
                 Значение по умолчанию - top<br>
                </li>
            </p>
+           <p>
+               <li>valign<br>
+                Атрибут valign предназначен для размещения заголовка до таблицы или после нее. Этот атрибут работает только в браузере Internet Explorer, а для всех остальных применяется align. 
+                Тем не менее, атрибут align корректно действует и для IE, поэтому сочетание атрибутов align и valign необходимо только для этого браузера, когда требуется одновременное выравнивание заголовка по вертикали и горизонтали.<br>
+                Синтаксис - &lt;caption valign="bottom | top"&gt;...&lt;/caption&gt;<br>
+                Значения:<br>
+                    bottom - Заголовок размещается под таблицей.<br>
+                    top - Заголовок размещается перед таблицей.<br>
+               </li>
+           </p>
        </ol>
        <table width="100%" border="1" cellspacing="1" cellpadding="4">
         <caption align="bottom">Пример таблицы</caption>
@@ -72,6 +82,13 @@
          <td>1</td><td>FXD</td>
          <td>URN</td><td>LWK</td>
         </tr>
+       </table>
+
+       <table width="60%" border="1" cellspacing="1" cellpadding="4">
+        <caption align="right" valign="bottom">
+          Пример таблицы
+        </caption>
+        <tr><td>...</td></tr>
        </table>
 </body>
 </html>
