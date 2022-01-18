@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag datalist</title>
+</head>
+<body>
+    <h1>Тег "datalist"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Создает список вариантов, которые можно выбирать при наборе в текстовом поле. 
+        Изначально этот список скрыт и становится доступным при получении полем фокуса или наборе текста.<br>
+        Синтаксис <br>
+        &lt;input list="<идентификатор>"&gt;<br>
+        &lt;datalist id="<идентификатор>"&gt;<br>
+        &lt;option value="Текст1"&gt;<br>
+        &lt;option value="Текст1"&gt;<br>
+        &lt;/datalist&gt;<br>
+        Список, создаваемый тегом &lt;datalist&gt;, связывается с текстовым полем посредством атрибута id. 
+        Его значение должно совпадать со значением атрибута list тега &lt;input&gt;.<br>
+    </p>
+    <p>Выберите любимого персонажа:</p>
+        <p><input list="character">
+        <datalist id="character">
+        <option value="Чебурашка"></option>
+        <option value="Крокодил Гена"></option>
+        <option value="Шапокляк"></option>
+        </datalist></p>
+</body>
+</html>
