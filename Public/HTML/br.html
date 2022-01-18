@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag br</title>
+</head>
+<body>
+    <h1>Тег "br"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Тег &lt;br&gt; устанавливает перевод строки в том месте, где этот тег находится. 
+        В отличие от тега абзаца &lt;p&gt;, использование тега &lt;br&gt; не добавляет пустой отступ перед строкой. 
+        Если текст, в котором используется перевод строки, обтекает плавающий элемент, то с помощью атрибута clear тега &lt;br&gt; можно сделать так, чтобы следующая строка начиналась ниже элемента.<br>
+        Синтаксис - Текст&lt;br&gt;Текст<br>
+        Атрибут clear сообщает браузеру, как обрабатывать следующую строку, если текст обтекает плавающий элемент.<br>
+        Плавающим элементом называется изображение, у которого установлен атрибут align или элемент, к которому применяется стилевое свойство float.
+        Результат использования clear зависит от края, по которому выравнивается элемент и значения clear. 
+        Так, если изображение выравнивается по левому краю, а значение атрибута clear тега &lt;br&gt; установлено как all или left, то текст после тега &lt;br&gt; будет отображаться ниже рисунка. 
+        Любые другие значения clear заставят текст располагаться справа от изображения и обтекать его.<br>
+        Синтаксис - &lt;br clear="all | left | right | none"&gt;<br>
+        Значения:<br>
+        all Отменяет обтекание элемента одновременно с правого и левого края.<br>
+        left Отменяет обтекание с левой стороны элемента, расположенного после тега &lt;br&gt;.<br>
+        right Отменяет обтекание с правой стороны элемента.<br>
+        none Отменяет действие атрибута.<br>
+        <div style="float: left; background: #fd0; border: solid 1px black; padding: 10px; width: 40%">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.
+            </div>
+            <br clear="all">
+            <p>Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit au gue duis dolore te feugat nulla facilisi.</p>
+    </p>
+</body>
+</html>
