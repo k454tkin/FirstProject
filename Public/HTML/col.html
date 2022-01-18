@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag col</title>
+</head>
+<body>
+    <h1>Тег "col"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Тег &lt;col&gt; задает ширину и другие характеристики одной или нескольких колонок таблицы. 
+        При наличии этого тега браузер начинает показывать содержимое таблицы, не дожидаясь ее полной загрузки.
+        Тег &lt;col&gt; можно использовать совместно с тегом &lt;colgroup&gt;, который задает группу колонок, обладающих общими характеристиками.<br>
+        Синтаксис <br> 
+        &lt;table&gt;<br>
+        &lt;col атрибуты&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt; ... &lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/table&gt;<br>
+    </p>
+    <table width="400" border="0" cellpadding="5" cellspacing="0">
+        <col width="150" valign="top">
+        <col width="250" valign="top">
+        <tr>
+         <td style="background: #B0B28E">Lorem ipsum dolor sit amet, consectetuer 
+          adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet 
+          dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis 
+          nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex 
+          ea commodo consequat.
+         </td>
+         <td style="background: #CCCCCC">Lorem ipsum dolor sit amet, consectetuer 
+          adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet 
+          dolore magna aliguam erat volutpat. Ut wisis enim ad minim veniam, quis 
+          nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex 
+          ea commodo consequat. 
+         </td>
+        </tr>
+       </table>
+       <h3>Атрибуты:</h3>
+       <ol>
+           <p>
+               <li>align<br>
+                Задает выравнивание содержимого колонок по горизонтали. 
+                Этот атрибут действует на все ячейки в колонке, в том числе и на заголовки таблицы, которые определяются тегом &lt;th&gt;. 
+                Чтобы управлять выравниванием содержимого разных элементов воспользуйтесь стилями или устанавливайте атрибут align для отдельных ячеек таблицы.<br>
+                Синтаксис - &lt;col align="left | center | right | justify"&gt;<br>
+                <table border="1" width="400">
+                    <col align="left">
+                    <col span="3" width="50" align="center">
+                    <tr>
+                     <td>1</td>
+                     <td>2</td>
+                     <td>3</td>
+                     <td>4</td>
+                    </tr>
+                   </table>
+               </li>
+           </p>
+           <p>
+               <li>char<br>
+                Атрибут char заставляет выравниваться содержимое колонки по заданному символу. 
+                Эта возможность может пригодиться для выравнивания колонки чисел по точке. 
+                Работает только в том случае, если значение атрибута align установлено как char.<br>
+                Синтаксис <br> 
+                &lt;table&gt;<br>
+                &lt;col char="символ"&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt; ... &lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;/table&gt;<br>
+                <table width="450" cellpadding="2" cellspacing="0" border="1">
+                    <col align="left">
+                    <col span="3" align="char" char=",">
+                    <tr> 
+                     <td>&nbsp;</td><td>Нефть</td><td>Золото</td><td>Дерево</td><td>Газ</td>
+                    </tr>
+                    <tr> 
+                     <td>2010</td><td>100,56</td><td>72,08</td><td>11,82</td><td>8</td>
+                    </tr>
+                    <tr>
+                     <td>2011</td><td>430,74</td><td>94,83</td><td>83,24</td><td>6</td>
+                    </tr>
+                    <tr>
+                     <td>2012</td><td>964,67</td><td>131,42</td><td>95,33</td><td>4</td>
+                    </tr>
+                    <tr>
+                     <td>2013</td><td>1201,11</td><td>182,07</td><td>108,18</td><td>2</td>
+                    </tr>
+                   </table>
+               </li>
+           </p>
+           <p>
+               <li>charoff<br>
+                Если атрибут align установлен как char, а для атрибута char в качестве значения задан символ, то с помощью атрибута charoff можно смещать содержимое ячейки влево или вправо относительно заданного символа. 
+                Так, charoff="3" означает, что браузер должен сместить содержимое ячейки на три символа вправо, а charoff="-3" — сместить на три символа влево.<br>
+                Синтаксис <br> 
+                &lt;table&gt;<br>
+                &lt;col charoff="значение"&gt;<br>
+                &lt;tr&gt;<br>
+                &lt;td&gt; ... &lt;/td&gt;<br>
+                &lt;/tr&gt;<br>
+                &lt;/table&gt;<br>
+                <table width="450" cellpadding="2" cellspacing="0" border="1">
+                    <col align="left">
+                    <col span="3" align="char" char="," charoff="-2">
+                    <tr> 
+                     <td>&nbsp;</td><td>Нефть</td><td>Золото</td><td>Дерево</td><td>Газ</td>
+                    </tr>
+                    <tr> 
+                     <td>2010</td><td>100,56</td><td>72,08</td><td>11,82</td><td>8</td>
+                    </tr>
+                    <tr>
+                     <td>2011</td><td>430,74</td><td>94,83</td><td>83,24</td><td>6</td>
+                    </tr>
+                    <tr>
+                     <td>2012</td><td>964,67</td><td>131,42</td><td>95,33</td><td>4</td>
+                    </tr>
+                    <tr>
+                     <td>2013</td><td>1201,11</td><td>182,07</td><td>108,18</td><td>2</td>
+                    </tr>
+                   </table>
+               </li>
+           </p>
+           <p>
+               <li>span<br>
+                Определяет число колонок, к которым будут применяться заданные характеристики. 
+                Если этот атрибут отсутствует, то тег &lt;col&gt; работает для одной колонки. Допускается применять атрибут span к нескольким колонкам и таким образом формировать группы колонок с одинаковыми характеристиками.<br>
+                Синтаксис - &lt;col span="число"&gt;<br>
+                <table width="700" cellspacing="0" border="1">
+                    <col width="150">
+                    <col span="5" width="50" align="center">
+                    <col span="4" width="75" align="center">
+                    <tr> 
+                     <td>&nbsp;</td><td>1995</td><td>1996</td><td>1997</td>
+                     <td>1998</td><td>1999</td><td>2000</td><td>2001</td>
+                     <td>2002</td><td>2003</td>
+                    </tr>
+                    <tr> 
+                     <td>Нефть</td><td>5</td><td>7</td><td>2</td><td>8</td>
+                     <td>3</td><td>34</td><td>62</td><td>74</td><td>57</td>
+                    </tr>
+                    <tr>
+                     <td>Золото</td><td>3</td> <td>6</td><td>4</td><td>6</td>
+                     <td>4</td><td>69</td><td>72</td><td>56</td><td>47</td>
+                    </tr>
+                    <tr>
+                     <td>Дерево</td><td>5</td><td>8</td><td>3</td><td>4</td>
+                     <td>7</td><td>73</td><td>79</td><td>34</td><td>86</td>
+                    </tr>
+                   </table>
+               </li>
+           </p>
+           <p>
+               <li>valign<br>
+                Устанавливает вертикальное выравнивание содержимого колонки. 
+                По умолчанию контент ячеек в колонке располагается по центру вертикали.<br>
+                Синтаксис - &lt;col valign="baseline | bottom | middle | top"&gt;<br>
+                Значения:<br>
+                baseline - Выравнивание по базовой линии, при этом происходит привязка содержимого колонки к одной линии. Браузеры не поддерживают это значение.<br>
+                bottom - Выравнивание по нижнему краю.<br>
+                middle - Выравнивание по середине.<br>
+                top - Выравнивание по верхнему краю строки.<br>
+                <table width="700" border="1">
+                    <col width="150">
+                    <col valign="top" span="3">
+                    <tr>
+                     <td>1<Br>1<Br>1</td>
+                     <td>2</td>
+                     <td>3</td>
+                     <td>4</td>
+                    </tr>
+                   </table>                 
+               </li>
+           </p>
+           <P>
+               <li>width<br>
+                Задает ширину колонки. 
+                Если общая ширина содержимого превышает указанную ширину, то браузер будет пытаться «втиснуться» в заданные размеры за счет форматирования текста. 
+                В случае, когда это невозможно, например, в колонке находятся изображения, атрибут width будет проигнорирован, и новая ширина колонки будет вычислена на основе ее содержимого.<br>
+                Синтаксис - &lt;col width="значение"&gt;<br>
+                Обычно применяется любое целое значение в пикселах или процентах от доступного пространства. 
+                Альтернативный вариант основан на использовании символа *, который обозначает всю доступную ширину. 
+                Допустимо использовать кратные значения, например 3*. 
+                Например, если для таблицы установлена ширина 600 пикселов, а для колонок — 1*, 2*, то в пикселах это будет соответственно 200 и 400. 
+                При использовании подобных единиц браузеру требуется загрузить таблицу целиком, чтобы вычислить необходимую ширину ячеек, что приводит к задержке вывода больших таблиц.<br>
+                По умолчанию ширина вычисляется на основе содержимого ячейки.
+                <table cellpadding="10" border="1" width="100%">
+                    <col width="20%">
+                    <col width="80%">
+                    <tr>
+                     <td> ... </td>
+                     <td> ... </td>
+                    </tr> 
+                   </table> 
+               </li>
+           </P>
+       </ol>
+</body>
+</html>
