@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag button</title>
+</head>
+<body>
+    <h1>Тег "button"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Тег &lt;button&gt; создает на веб-странице кнопки и по своему действию напоминает результат, получаемый с помощью тега &lt;input&gt; (с атрибутом type="button | reset | submit"). 
+        В отличие от этого тега, &lt;button&gt; предлагает расширенные возможности по созданию кнопок. 
+        Например, на подобной кнопке можно размещать любые элементы HTML, в том числе изображения. 
+        Используя стили можно определить вид кнопки путем изменения шрифта, цвета фона, размеров и других параметров.<br><br>
+        Теоретически, тег &lt;button&gt; должен располагаться внутри формы, устанавливаемой элементом &lt;form&gt;.
+        Тем не менее, браузеры не выводят сообщение об ошибке и корректно работают с тегом &lt;button&gt;, если он встречается самостоятельно.
+        Однако, если необходимо результат нажатия на кнопку отправить на сервер, помещать &lt;button&gt; в контейнер &lt;form&gt; обязательно.<br>
+        Синтаксис <br>&lt;blink&gt;<br>&lt;button&gt;...&lt;/button&gt;<br>&lt;/form&gt;<br>
+        <p style="text-align: center"><button>Кнопка с текстом</button>
+            <button><img src="images/umbrella.gif" alt="Зонтик" 
+                    style="vertical-align: middle"> Кнопка с рисунком</button></p>
+    </p>
+    <h3>Атрибуты:</h3>
+    <ol>
+        <p>
+            <li>accesskey<br>
+                Определяет горячую клавишу, с помощью которой происходит переход фокуса к элементу формы. 
+                Браузеры при этом используют различные комбинации клавиш. Например, для accesskey="s" работают следующие сочетания.<br>
+                Синтаксис - &lt;button accesskey="клавиша"&gt;...&lt;/button&gt;<br>
+                <p><button accesskey="a">Горячая клавиша a</button></p>
+                <p><button accesskey="1">Горячая клавиша 1</button></p>
+                <p><button accesskey="b">Горячая клавиша b</button></p>
+                <p><button accesskey="q">Горячая клавиша q</button></p>
+            </li>
+        </p>
+        <p>
+            <li>autofocus<br>
+                Атрибут autofocus устанавливает, что кнопка получает фокус после загрузки страницы. 
+                Такую кнопку можно нажать сразу без перевода на неё фокуса, например, с помощью клавиатуры.<br>
+                Синтаксис - &lt;button autofocus&gt;...&lt;/button&gt;<br>
+                <form> 
+                    <fieldset>
+                    <p>Нажимая кнопку Далее, вы соглашаетесь со всеми условиями Лицензионного соглашения, как явными, так и указанными в неявной форме.</p>
+                    <p><button autofocus value="next">Далее</button></p>
+                    </fieldset>
+                   </form>
+            </li>
+        </p>
+        <p>
+            <li>disabled<br>
+                Блокирует доступ и изменение кнопки. 
+                Она в таком случае отображается серой и недоступной для активации пользователем. 
+                Кроме того, такая кнопка не может получить фокус путем нажатия на клавишу Tab, мышью или другим способом. 
+                Тем не менее, такое состояние кнопки можно изменять через скрипты. Значение блокированной кнопки не передается на сервер.<br>
+                Синтаксис - &lt;button disabled&gt;...&lt;/button&gt;<br>
+                По умолчанию это значение выключено.<br>
+                <form action="button.html"> 
+                    <p><button>Активная кнопка</button>
+                    <button disabled>Неактивная кнопка</button></p>
+                   </form> 
+            </li>
+        </p>
+        <p>
+            <li>form<br>
+                Связывает кнопку с формой по её идентификатору. 
+                Такая связь необходима в случае, когда кнопка не располагается внутри &lt;form&gt;, например, при создании её программно.<br>
+                Синтаксис - &lt;button disabled&gt;...&lt;/button&gt;<br>
+                <form id="data">
+                    <p><input placeholder="Ваше имя" name="user"></p>
+                   </form>
+                   <p><button type="submit" form="data">Отправить форму</button></p>              
+            </li>
+        </p>
+        <p>
+            <li>formaction<br>
+                Определяет адрес обработчика формы — это программа, которая получает данные формы и производит с ними желаемые действия. 
+                Атрибут formaction по своему действию аналогично атрибуту action тега &lt;form&gt;. 
+                Если одновременно указать action и formaction, то при нажатии на кнопку атрибут action игнорируется и данные пересылаются по адресу, указанному в formaction.<br>
+                Синтаксис - &lt;button formaction="URL"&gt;...&lt;/button&gt;<br>
+                <form> 
+                    <p><input placeholder="Ваше имя" name="user"></p>
+                    <p><button formaction="handler.php">Отправить</button></p>
+                   </form> 
+            </li>
+        </p>
+        <p>
+            <li>formenctype<br>
+                Устанавливает способ кодирования данных формы при их отправке на сервер. 
+                Обычно явно указывается в случае, когда используется поле для отправки файла (input type="file"). 
+                Этот атрибут по своему действию аналогичен атрибуту enctype тега &lt;form&gt;.<br>
+                Синтаксис <br> &lt;button formenctype="application/x-www-form-urlencoded | multipart/form-data | text/plain"&gt;<br>...<br>&lt;/button&gt;<br>
+                Значения:<br>
+                application/x-www-form-urlencoded Вместо пробелов ставится +, символы вроде русских букв кодируются их шестнадцатеричными значениями (например, %D0%9F%D0%B5%D1%82%D1%8F вместо Петя).<br>
+                multipart/form-data Данные не кодируются. Это значение применяется при отправке файлов.<br>
+                text/plain Пробелы заменяются знаком +, буквы и другие символы не кодируются.<br>
+                <form>
+                    <p>Ваше имя: <input name="user"></p>
+                    <p>Файл для заявки: <input name="file" type="file"></p>
+                    <p><button formaction="handler.php" formmethod="post" 
+                       formenctype="multipart/form-data">Отправить</button>
+                   </form>
+            </li>
+        </p>
+        <p>
+            <li>formmethod<br>
+                Атрибут сообщает браузеру, каким методом следует передавать данные формы на сервер.<br>
+                Синтаксис - &lt;button formmethod="get | post"&gt;...&lt;/button&gt;<br>
+                GET - Этот метод предназначен для передачи данных формы непосредственно в адресной строке в виде пар «имя=значение», которые добавляются к адресу страницы после вопросительного знака и разделяются между собой амперсандом (символ &). 
+                Полный адрес к примеру будет http://site.ru/doc/?name=Vasya&password=pup. Объём данных в методе ограничен 4 Кб.<br>
+                POST - Посылает на сервер данные в запросе браузера, объём пересылаемых данных ограничен лишь настройками сервера.<br>
+                <form>
+                    <p>Ваше имя: <input name="user"></p>
+                    <p>Файл для заявки: <input name="file" type="file"></p>
+                    <p><button formaction="handler.php" formmethod="post" formenctype="multipart/form-data">Отправить</button>
+                   </form>
+            </li>
+        </p>
+        <p>
+            <li>formnovalidate<br>
+                Отменяет встроенную проверку данных введенных пользователем в форме на корректность при нажатии на кнопку. 
+                Такая проверка делается браузером автоматически при отправке формы на сервер для полей &lt;input type="email"&gt;, &lt;input type="url"&gt;, а также при наличии атрибута pattern или required у тега &lt;input&gt;.<br>
+                Синтаксис - &lt;button formnovalidate&gt;...&lt;/button&gt;<br>
+                <form action="handler.php">
+                    <p><input required placeholder="Имя"></p>
+                    <p><input type="email" required placeholder="Ваш email"></p>
+                    <p><input type="url" required placeholder="Сайт"></p>
+                    <p><button formnovalidate>Отправить без проверки</button></p>
+                   </form>
+            </li>
+        </p>
+        <P>
+            <li>formtarget<br>
+                Определяет окно или фрейм в которое будет загружаться результат, возвращаемый обработчиком формы, в виде HTML-документа.<br>
+                Синтаксис - &lt;button formtarget="<имя окна> | _blank | _self | _parent | _top"&gt;...&lt;/button&gt;<br>
+                Значения:<br>
+                В качестве значения используется имя окна или фрейма, заданное атрибутом name. 
+                Если установлено несуществующее имя, то будет открыто новое окно. В качестве зарезервированных имен можно указывать следующие.<br>
+                _blank Загружает страницу в новое окно браузера.<br>
+                _self Загружает страницу в текущее окно.<br>
+                _parent Загружает страницу во фрейм-родитель, если фреймов нет, то это значение работает как _self.<br>
+                _top Отменяет все фреймы и загружает страницу в полном окне браузера, если фреймов нет, то это значение работает как _self.<br>
+                <form>
+                    <p><iframe name="output" height="50" width="400"></iframe></p>
+                    <p>Ваше имя: <input name="user"></p>
+                    <p><button formaction="handler.php" formtarget="output">Отправить</button></p>
+                   </form>
+            </li>
+        </P>
+        <P>
+            <li>name<br>
+                Определяет уникальное имя кнопки. 
+                Как правило, это имя используется при отправке значения кнопки на сервер или для доступа к кнопке через скрипты.<br>
+                Синтаксис - &lt;button name="имя"&gt;...&lt;/button&gt;<br>
+                В качестве имени используется набор символов, включая числа и буквы. 
+                JavaScript чувствителен к регистру, поэтому при обращении к элементу по имени соблюдайте ту же форму написания, что и в атрибуте name.<br>
+                <form action="handler.php">
+                    <p><button name="send" type="submit" value="ОК">Нажать нежно</button></p>
+                  </form>
+            </li>
+        </P>
+        <p>
+            <li>type<br>
+                Определяет тип кнопки, который устанавливает ее поведение в форме. 
+                По внешнему виду кнопки разного типа никак не различаются, но у каждой такой кнопки свои функции.<br>
+                Синтаксис - &lt;button type="button | reset | submit"&gt;...&lt;/button&gt;<br>
+                Значения:<br>
+                button Обычная кнопка.<br>
+                reset Кнопка для очистки введенных данных формы и возвращения значений в первоначальное состояние.<br>
+                submit Кнопка для отправки данных формы на сервер.<br>
+                Значение по умолчанию - submit.<br>
+                <form action="handler.php">
+                    <p><input type="text" name="user"></p>
+                    <p><button type="reset">Очистить форму</button> 
+                    <button type="submit">Отправить форму</button></p>
+                   </form>
+            </li>
+        </p>
+        <p>
+            <li>value<br>
+                Определяет значение кнопки, которое будет отправлено на сервер. 
+                На сервер отправляется пара «имя=значение», где имя задается атрибутом name тега &lt;button&gt;, а значение — атрибутом value. 
+                Значение может, как совпадать с текстом на кнопке, так быть и самостоятельным. 
+                Также атрибут value применяется для доступа к данным через скрипты.<br>
+                Синтаксис - &lt;button value="значение"&gt;...&lt;/button&gt;<br>
+                <form action="handler.php">
+                    <p><input type="text" name="user"></p>
+                    <p><button value="11111010101" name="hidden" type="submit">Отправить форму</button></p>
+                   </form>
+            </li>
+        </p>
+    </ol>
+</body>
+</html>
