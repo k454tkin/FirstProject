@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script> 
+        window.onload = function() {
+         var drawingCanvas = document.getElementById('smile');
+         if(drawingCanvas && drawingCanvas.getContext) {
+          var context = drawingCanvas.getContext('2d');
+          // Рисуем окружность 
+          context.strokeStyle = "#000";
+          context.fillStyle = "#fc0";
+          context.beginPath();
+          context.arc(100,100,50,0,Math.PI*2,true);
+          context.closePath();
+          context.stroke();
+          context.fill();
+          // Рисуем левый глаз 
+          context.fillStyle = "#fff";
+          context.beginPath();
+          context.arc(84,90,8,0,Math.PI*2,true);
+          context.closePath();
+          context.stroke();
+          context.fill();
+          // Рисуем правый глаз 
+          context.beginPath();
+          context.arc(116,90,8,0,Math.PI*2,true);
+          context.closePath();
+          context.stroke();
+          context.fill();
+          // Рисуем рот
+          context.beginPath();
+          context.moveTo(70,115);
+          context.quadraticCurveTo(100,130,130,115);
+          context.quadraticCurveTo(100,150,70,115); 
+          context.closePath();
+          context.stroke();
+          context.fill();
+         }
+        }
+       </script>
+    <title>Tag canvas</title>
+</head>
+<body>
+    <h1>Тег "canvas"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Создает область, в которой при помощи JavaScript можно рисовать разные объекты, выводить изображения, трансформировать их и менять свойства. 
+        При помощи тега  &lt;canvas&gt; можно создавать рисунки, анимацию, игры и др.<br>
+        Синтаксис <br> &lt;canvas id="идентификатор"&gt;<br>&lt;/canvas&gt;<br>
+        Атрибуты:<br>
+        height Задает высоту холста. По умолчанию 300 пикселов.<br>
+        width Задает ширину холста. По умолчанию 150 пикселов.<br>
+    </p>
+    <canvas id="smile" width="200" height="200">
+        <p>Ваш браузер не поддерживает рисование.</p>
+      </canvas>
+</body>
+</html>
