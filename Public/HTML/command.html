@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag command</title>
+</head>
+<body>
+    <h1>Тег "command"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Создает команду в виде переключателя, флажка или обычной кнопки. 
+        Тег &lt;command&gt; должен располагаться внутри &lt;menu&gt;, в противном случае он не будет показан.<br>
+        Синтаксис - &lt;menu&gt;<br>&lt;command параметры&gt;<br>&lt;/menu&gt;<br>
+        Атрибуты:<br>
+        checked Активирует команду. Доступно только если type установлен как radio или checkbox.<br>
+        disabled Задает, доступна команда или нет.<br>
+        icon Адрес картинки, которая показывается как команда.<br>
+        label Название команды.<br>
+        radiogroup Задает имя группы переключателей. Доступно только если type установлен как radio.<br>
+        type Определяет тип команды (checkbox, command, radio). По умолчанию command.
+    </p>
+    <menu>
+        <command onclick="alert('Слава роботам!')" label="Выполнить директиву №1">
+        <command onclick="alert('Сдавайтесь, людишки!')" label="Выполнить директиву №2">
+        <command onclick="alert('Убить всех человеков!')" label="Выполнить директиву №3">
+       </menu>
+</body>
+</html>
