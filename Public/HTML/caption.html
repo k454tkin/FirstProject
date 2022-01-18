@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag caption</title>
+</head>
+<body>
+    <h1>Тег "caption"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Тег &lt;caption&gt; предназначен для создания заголовка к таблице и может размещаться только внутри контейнера &lt;table&gt;, причем сразу после открывающего тега. 
+        Nакой заголовок представляет собой текст, по умолчанию отображаемый перед таблицей и описывающий ее содержание.<br>
+        Синтаксис <br> 
+        &lt;table&gt;<br>
+        &lt;caption&gt;Текст&lt;/caption&gt;<br>
+        &lt;tr&gt;<br>
+        &lt;td&gt; ... &lt;/td&gt;<br>
+        &lt;/tr&gt;<br>
+        &lt;/table&gt;<br>
+        Атрибуты:<br>
+        align Определяет выравнивание заголовка по горизонтали.<br>
+        valign Устанавливает расположение заголовка до или после таблицы.<br>
+    </p>
+    <table width="100%" border="1" cellspacing="0" cellpadding="4">
+        <caption>Таблица 3.2. Демонстрация катаболических процессов организма</caption>  
+        <tr> 
+         <th>&nbsp;</th><th>Чебурашка</th>
+         <th>Крокодил Гена</th><th>Шапокляк</th>
+        </tr>
+        <tr> 
+         <td>Съел, кг</td><td>5</td>
+         <td>2</td><td>1</td>
+        </tr>
+        <tr> 
+         <td>Выпил, л</td><td>6</td>
+         <td>8</td><td>2</td>
+        </tr>
+        <tr> 
+         <td>Смог, раз</td><td>5</td>
+         <td>5</td><td>1</td>
+        </tr>
+       </table>
+       <h3>Атрибуты:</h3>
+       <ol>
+           <p>
+               <li>align<br>
+                Атрибут align определяет выравнивание заголовка относительно таблицы. 
+                Результат его действия зависит от используемого браузера и установленного значения.<br>
+                Синтаксис - &lt;caption align="left | right | top | bottom"&gt;...&lt;/caption&gt;<br>
+                Значения:<br>
+                left - В браузере Internet Explorer и Opera располагает заголовок сверху и выравнивает его по левому краю таблицы. 
+                В Firefox заголовок располагается слева от таблицы. Safari и Chrome игнорируют это значение.<br>
+                right - В браузере Internet Explorer и Opera располагает заголовок сверху таблицы и выравнивает его по правому краю таблицы. 
+                В браузере Firefox заголовок располагается от таблицы справа. Safari и Chrome игнорируют это значение.<br>
+                top - Заголовок размещается перед таблицей по ее центру.<br>
+                bottom - Заголовок размещается внизу таблицы по ее центру.<br>
+                Значение по умолчанию - top<br>
+               </li>
+           </p>
+       </ol>
+       <table width="100%" border="1" cellspacing="1" cellpadding="4">
+        <caption align="bottom">Пример таблицы</caption>
+        <tr> 
+         <th>#</th>
+         <th>Чебурашка</th>
+         <th>Крокодил Гена</th>
+         <th>Шапокляк</th>
+        </tr>
+        <tr> 
+         <td>1</td><td>FXD</td>
+         <td>URN</td><td>LWK</td>
+        </tr>
+       </table>
+</body>
+</html>
