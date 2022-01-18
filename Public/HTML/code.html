@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag code</title>
+</head>
+<body>
+    <h1>Тег "code"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Тег &lt;code&gt; предназначен для отображения одной или нескольких строк текста, который представляет собой программный код. 
+        Сюда относятся имена переменных, ключевые слова, тексты функции и т.д. 
+        Браузеры обычно отображают содержимое контейнера &lt;code&gt; как моноширинный текст уменьшенного размера.
+        В отличие от тега &lt;pre&gt; дополнительные пробелы внутри контейнера &lt;code&gt; не учитываются, так же, как и переносы текста. 
+        Поэтому используйте тег &lt;br&gt; или &lt;p&gt; для создания переносов.<br>
+        Синтаксис - &lt;code&gt;Текст&lt;/code&gt;<br>
+    </p>
+    <p>Код программы</p>
+  <p><code>
+    function checkParent (src, dest) {<Br>
+     while (src != null) {<Br>
+       if (src.tagName == dest) return src<Br>
+        src = src.parentElement<Br>
+     }<Br>
+     return null<Br>
+    }</code></p>
+</body>
+</html>
