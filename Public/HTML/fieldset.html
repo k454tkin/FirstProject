@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag fieldset</title>
+</head>
+<body>
+    <h1>Тег "fieldset"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Элемент &lt;fieldset&gt; предназначен для группирования элементов формы. 
+        Такая группировка облегчает работу с формами, содержащими большое число данных. 
+        Например, один блок может быть предназначен для ввода текстовой информации, а другой — для флажков.
+
+        Браузеры для повышения наглядности отображают результат использования тега &lt;fieldset&gt; в виде рамки. 
+        Ее вид зависит от операционной системы, а также используемого браузера.<br>
+        Синтаксис <br>
+            &lt;form&gt;<br>
+            &lt;fieldset&gt;...&lt;/fieldset&gt;<br>
+            &lt;/form&gt;<br>
+    </p>
+    <form action="handler.php">
+        <fieldset>
+         <legend>Работа со временем</legend>
+           <input type="checkbox"> создание пунктуальности (никогда не будете никуда опаздывать);<br>
+           <input type="checkbox"> излечение от пунктуальности (никогда никуда не будете торопиться);<br>
+           <input type="checkbox"> изменение восприятия времени и часов.
+            <p><input type="submit"></p>
+        </fieldset>
+       </form>
+    <ol>
+        <p>
+            <li>disabled<br>
+                Блокирует доступ к элементам формы, расположенным внутри тега &lt;fieldset&gt;. 
+                Поля формы при этом отображаются так, словно к каждому из них добавлен атрибут disabled.<br>
+                Синтаксис <br>
+                &lt;fieldset disabled&gt;...&lt;/fieldset&gt;<br>
+                <form action="handler.php">
+                    <fieldset disabled>
+                     <legend>Доступ закрыт</legend>
+                     <p>Эта группа в данный момент времени недоступна.
+                        Пожалуйста, свяжитесь с администратором этой группы.</p>
+                     <p><input placeholder="Причина обращения"></p>
+                     <p><input type="submit" value="Связаться"></p>
+                    </fieldset>
+                   </form> 
+            </li>
+        </p>
+        <P>
+            <li>form<br>
+                Связывает группу &lt;fieldset&gt; с формой по её идентификатору. 
+                Такая связь необходима в случае, когда элемент не располагается внутри &lt;form&gt;, например, при создании её программно. 
+                Если установлено связывание &lt;form&gt; и &lt;fieldset&gt; между собой, то можно отправлять данные на сервер и работать с формой, как если бы элементы находились внутри формы.<br>
+                Синтаксис <br>
+                &lt;fieldset form="идентификатор"&gt;<br>...<br>&lt;/fieldset&gt;<br>
+                <form id="data">
+                </form>
+                <fieldset form="data">
+                 <p>В каком году произошла Отечественная война 1812 года?</p>
+                 <p><input type="radio" name="answer" value="1380"> 1380</p>
+                 <p><input type="radio" name="answer" value="1812" checked> 1812</p>
+                 <p><input type="radio" name="answer" value="1914"> 1914</p>
+                 <p><input type="radio" name="answer" value="1941"> 1941</p>
+                 <p><input type="submit" value="Отправить"></p>
+                </fieldset>
+            </li>
+        </P>
+        <p>
+            <li>title<br>
+                Добавляет поясняющий текст в виде всплывающей подсказки, которая отображается, когда курсор мыши задерживается на группе формы.<br>
+                Синтаксис <br>
+                &lt;fieldset title="текст"&gt;...&lt;/fieldset&gt;<br>
+                <form action="handler.php">
+                    <fieldset title="Работа со временем">  
+                     <legend>Работа со временем</legend>
+                      <input type="checkbox"> создание пунктуальности (никогда не будете никуда опаздывать);<br>
+                      <input type="checkbox"> излечение от пунктуальности (никогда никуда не будете торопиться);<br>
+                      <input type="checkbox"> изменение восприятия времени и часов.
+                      <p><input type="submit"></p>
+                    </fieldset> 
+            </li>
+        </p>
+    </ol>   
+</body>
+</html>
