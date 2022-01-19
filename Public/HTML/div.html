@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag div</title>
+    <style type="text/css">
+        .block1 { 
+         width: 200px; 
+         background: #ccc;
+         padding: 5px;
+         padding-right: 20px; 
+         border: solid 1px black; 
+         float: left;
+        }
+        .block2 { 
+         width: 200px; 
+         background: #fc0; 
+         padding: 5px; 
+         border: solid 1px black; 
+         float: left; 
+         position: relative; 
+         top: 40px; 
+         left: -70px; 
+        }
+       </style> 
+</head>
+<body>
+    <h1>Тег "div"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Элемент &lt;div&gt; является блочным элементом и предназначен для выделения фрагмента документа с целью изменения вида содержимого. 
+        Как правило, вид блока управляется с помощью стилей. 
+        Чтобы не описывать каждый раз стиль внутри тега, можно выделить стиль во внешнюю таблицу стилей, а для тега добавить атрибут class или id с именем селектора.<br>
+        Как и при использовании других блочных элементов, содержимое тега &lt;div&gt; всегда начинается с новой строки. После него также добавляется перенос строки.<br>
+        Синтаксис - &lt;div&gt;...&lt;/div&gt;<br>
+    </p>
+    
+    <h3>Атрибуты:</h3>
+    <ol>
+        <p>
+            <li>align<br>
+                Выравнивание содержимого контейнера &lt;div&gt; по краю.<br>
+                Синтаксис - &lt;div align="center | left | right | justify"&gt;...&lt;/div&gt;<br>
+                Значения:<br>
+                center Выравнивание текста по центру.<br>
+                left (по умолчанию) Выравнивание текста по левому краю.<br>
+                right Выравнивание текста по правому краю.<br>
+                justify Выравнивание по ширине, что означает одновременное выравнивание по левому и правому краю. 
+                Чтобы произвести это действие браузер в этом случае добавляет пробелы между словами.<br>
+                <div align="right" id="layer1">
+                    <div align="left" id="layer2">
+                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                     sed diem nonummy nibh euismod tincidunt ut lacreet dolore 
+                     magna aliguam erat volutpat.
+                    </div>
+                    </div>
+            </li>
+        </p>
+        <p>
+            <li>title<br>
+                Добавляет поясняющий текст к контейнеру &lt;div&gt; в виде всплывающей подсказки, которая отображается, когда курсор мыши задерживается на содержимом.<br>
+                Синтаксис - &lt;div title="текст"&gt;...&lt;/div&gt;<br>
+                <div title="Каноническая рыба">Lorem 
+                    ipsum dolor sit amet, consectetuer adipiscing elit, sed diem 
+                    nonummy nibh euismod tincidunt ut lacreet dolore magna 
+                    aliguam erat volutpat.</div>
+            </li>
+        </p>
+    </ol>
+    <div class="block1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.</div>
+    <div class="block2">Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</div> 
+</body>
+</html>
