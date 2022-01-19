@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag figure</title>
+    <script>
+        document.createElement('figure');
+        document.createElement('figcaption');
+       </script>
+    <style>
+        figure {
+         background: #5f6a72; /* Цвет фона */
+         padding: 10px; /* Поля вокруг */
+         display: block; /* Блочный элемент */
+         width: 150px; /* Ширина */
+         float: left; /* Блоки выстраиваются по горизонтали */
+         margin: 0 10px 10px 0; /* Отступы */
+         text-align: center; /* Выравнивание по центру */
+        }
+        figcaption {
+         color: #fff; /* Цвет текста */
+        }
+       </style>
+</head>
+<body>
+    <h1>Тег "figure"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Используется для группирования любых элементов, например, изображений и подписей к ним.<br>
+        Синтаксис <br>
+            &lt;figure&gt;<br>
+            ...<br>
+            &lt;/figure&gt;<br>
+    </p>
+<article>
+    <figure>
+         <p><img src="Images/5112160_900.gif" alt="" /></p>
+         <figcaption>Купеческий клуб</figcaption>
+        </figure>
+        <figure>
+         <p><img src="Images/images.jpg" alt="" /></p>
+         <figcaption>Памятник Св. Владимиру</figcaption>
+        </figure>
+    </article>
+    <p>
+        Internet Explorer до версии 8.0 включительно игнорирует тег &lt;figure&gt;, но отображает его содержимое. 
+        Также в этом браузере любые стили не применяются к элементу, пока он не создан через скрипт, как показано в примере.<br>    
+        Firefox полностью поддерживает этот тег начиная с версии 4.0, но версии 3.0 и старше также корректно отображают содержимое тега.<br>
+        Браузеры Firefox и Chrome автоматически добавляют к &lt;figure&gt; свойство margin со значением 1em 40px.
+    </p>
+</body>
+</html>
