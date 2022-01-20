@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag hr</title>
+</head>
+<body>
+    <h1>Тег "hr"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Рисует горизонтальную линию, которая по своему виду зависит от используемых параметров, а также браузера. 
+        Тег &lt;hr&gt; относится к блочным элементам, линия всегда начинается с новой строки, а после нее все элементы отображаются на следующей строке.<br>
+        Синтаксис <br>
+            &lt;hr&gt;<br>
+    </p>
+    <h3>Атрибуты:</h3>
+    <ol>
+        <p>
+            <li>align<br>
+                Выравнивание линии по краю родительского элемента. 
+                В качестве родителя обычно выступает окно браузера.<br>
+                Синтаксис <br>
+                    &lt;hr align="center | left | right"&gt;<br>
+                <hr align="right" width="300">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat volutpat.</p>
+            </li>
+        </p>
+        <p>
+            <li>color<br>
+                Задает цвет линии, созданной с помощью тега &lt;hr&gt;. 
+                Одновременно, использование этого атрибута запрещает трехмерные эффекты, словно был добавлен атрибут noshade.
+                Синтаксис <br>
+                    &lt;hr color="цвет"&gt;<br>
+                Для задания цвета линии применяется два способа: первый использует обозначения цветов в шестнадцатеричном коде, а второй — по названию некоторых цветов. 
+                Преимущественно используется способ, основанный на шестнадцатеричной системе исчисления, как наиболее универсальный.<br>
+                <hr color="red" width="300">
+                <hr color="green" width="300">
+                <hr color="blue" width="300">
+            </li>
+        </p>
+        <p>
+            <li>noshade<br>
+                Использование атрибута noshade отменяет трехмерные эффекты, которые используются при рисовании линии по умолчанию.<br>
+                Синтаксис <br>
+                    &lt;hr noshade&gt;<br>
+                По умолчанию этот атрибут не используется.<br>
+                <hr width="300">
+                <hr noshade width="300">
+            </li>
+        </p>
+        <p>
+            <li>size<br>
+                Устанавливает толщину линии в пикселах.<br>
+                Синтаксис <br>
+                    &lt;hr noshade&gt;<br>
+                По умолчанию значение 2. 
+                Нулевое или отрицательное значение устанавливает толщину линии в один пиксел.<br>
+                <hr noshade size="10">
+                <hr noshade size="8">
+                <hr noshade size="6">
+                <hr noshade size="4">
+                <hr noshade size="2">
+                <hr noshade size="1">
+            </li>
+        </p>
+        <p>
+            <li>width<br>
+                Устанавливает ширину линии в процентах или пикселах. 
+                При использовании процентов за 100% берется ширина родительского элемента. 
+                Как правило, в качестве родителя выступает окно браузера.<br>
+                Синтаксис <br>
+                    &lt;hr width="число"&gt;<br>
+                По умолчанию значение 100%.<br>
+                <hr noshade size="4" width="75%">
+                <hr noshade size="2" width="60%">
+                <hr noshade size="1" width="50%">
+                <hr noshade size="1" width="38%">
+                <hr noshade size="1" width="25%">
+                <hr noshade size="1" width="10%">
+            </li>
+        </p>
+    </ol>
+</body>
+</html>
