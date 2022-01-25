@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag legend</title>
+</head>
+<body>
+    <h1>Тег "legend"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Тег &lt;legend&gt; применяется для создания заголовка группы элементов формы, которая определяется с помощью тега &lt;fieldset&gt;. 
+        Группа элементов обозначается в браузере с помощью рамки, а текст, который располагается внутри контейнера &lt;legend&gt;, встраивается в эту рамку.<br>
+        Синтаксис <br>
+        &lt;fieldset&gt;<br>&lt;legend&gt;Текст&lt;/legend&gt;<br>&lt;fieldset&gt;<br>
+    </p>
+    <fieldset>
+        <legend>Работа со временем</legend>
+        <p><input type="checkbox"> создание пунктуальности (никогда не 
+         будете никуда опаздывать);<Br>
+         <input type="checkbox"> излечение от пунктуальности (никогда 
+         никуда не будете торопиться);<Br>
+         <input type="checkbox"> изменение восприятия времени и часов.</p>
+        </fieldset>
+    <h3>Атрибуты:</h3>
+    <ol>
+        <p>
+            <li>accesskey<br>
+                Атрибут accesskey позволяет перейти к группе элементов формы с помощью некоторого сочетания клавиш с заданной в атрибуте буквой или цифрой. 
+                Браузеры при этом используют различные комбинации клавиш. <br>
+                Синтаксис <br>
+            </li>
+            <p>Для перехода к блоку используется клавиша T.</p> 
+            <fieldset>
+                <legend accesskey="t">Работа со временем</legend>
+                <p><input type="checkbox"> создание пунктуальности (никогда не будете никуда опаздывать);<br>
+                <input type="checkbox"> излечение от пунктуальности (никогда никуда не будете торопиться);<br>
+                <input type="checkbox"> изменение восприятия времени и часов.</p>
+            </fieldset>
+        </p>
+        <p>
+            <li>align<br>
+                Выравнивание текста заголовка по краю.<br>
+                Синтаксис <br>
+                    &lt;legend align="left | center | right"&gt;...&lt;/label&gt;<br>
+            </li>
+            <fieldset>
+                <legend align="right">Lorem ipsum dolor sit amet</legend>
+                <p>... </p>
+               </fieldset>
+        </p>
+        <p>
+            <li>title<br>
+                Добавляет поясняющий текст в виде всплывающей подсказки, которая отображается, когда курсор мыши задерживается на заголовке.<br>
+                Синтаксис <br>
+                    &lt;legend title="текст"&gt;...&lt;/label&gt;<br>
+            </li>
+            <fieldset>
+                <legend title="Lorem ipsum...">Lorem 
+                ipsum dolor sit amet</legend>
+                <p>... </p>
+               </fieldset>
+        </p>
+    </ol>
+</body>
+</html>
