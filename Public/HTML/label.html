@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag label</title>
+</head>
+<body>
+    <h1>Тег "label"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Тег &lt;label&gt; устанавливает связь между определенной меткой, в качестве которой обычно выступает текст, и элементом формы (&lt;input&gt;, &lt;select&gt;, <&lt;textarea&gt;). 
+        Такая связь необходима, чтобы изменять значения элементов формы при нажатии курсором мыши на текст. 
+        Кроме того, с помощью &lt;label&gt; можно устанавливать горячие клавиши на клавиатуре и переходить на активный элемент подобно ссылкам.
+        Существует два способа связывания объекта и метки. 
+        Первый заключается в использовании идентификатора id внутри элемента формы и указании его имени в качестве атрибута for тега &lt;label&gt;. 
+        При втором способе элемент формы помещается внутрь контейнера &lt;label&gt;.<br>
+        Синтаксис <br>
+        &lt;input id="идентификатор"&gt;&lt;label for="идентификатор"&gt;Текст&lt;/label&gt;<br>
+        &lt;label&gt;&lt;input type="..."&gt;Текст&lt;/label&gt;<br>
+    </p>
+    <form action="handler.php">
+        <p><b>Lorem ipsum dolor sit amet...</b></p>
+        <p><input type="checkbox" id="check1"><label for="check1">Lorem</label><Br>
+        <input type="checkbox" id="check2"><label for="check2">Ipsum</label><Br>
+        <input type="checkbox" id="check3"><label for="check3">Dolor</label><Br>
+        <input type="checkbox" id="check4"><label for="check4">Sit amet</label></p>
+       </form> 
+    <h3>Атрибуты:</h3>
+    <ol>
+        <p>
+            <li>accesskey<br>
+                Определяет горячую клавишу, с помощью которой происходит переход фокуса к элементу формы. 
+                Браузеры при этом используют различные комбинации клавиш.<br>
+                Синтаксис <br>
+                    &lt;label accesskey="клавиша"&gt;...&lt;/label&gt;<br>
+                    <form action="handler.php">
+                        <p><input type=checkbox id="t1"><label for="t1" 
+                         accesskey="g">Нажмите &lt;Alt&gt;+&lt;g&gt;, чтобы перейти к
+                          разделу <b>Игры</b>.</label></p>
+                    </form>
+            </li>
+        </p>
+        <p>
+            <li>for<br>
+                Задает уникальный идентификатор, определяемый с помощью атрибута id элемента &lt;input&gt;, с которым следует установить связь. 
+                Атрибут for необходимо задавать в том случае, когда элемент формы и текст разделены. 
+                Если &lt;input&gt; размещается внутри контейнера &lt;label&gt;, то применять атрибут for не требуется.<br>
+                Синтаксис <br>
+                    &lt;label for="идентификатор"&gt;...&lt;/label&gt;<br>
+                    Значения
+                    Имя идентификатора.
+                    Такое имя чувствительно к регистру, поэтому его следует писать так же, как оно описано внутри элемента &lt;input&gt;.<br>
+                    <form action="handler.php">
+                        <p><input type="radio" name="l" id="radio1">
+                         <label for="radio1">Lorem ipsum</label></p>
+                         <p><input type="radio" name="l" id="radio2">
+                         <label for="radio2">Dolor sit amet</label></p>
+                       </form>
+            </li>
+        </p>
+    </ol>
+</body>
+</html>
