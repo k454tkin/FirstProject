@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag listing</title>
+</head>
+<body>
+    <h1>Тег "listing"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Предназначен для вывода листинга программ или кода. 
+        Отображает содержимое моноширинным шрифтом уменьшенного размера.<br>
+        Синтаксис <br>
+        &lt;listing&gt;Текст&lt;/listing<br>
+    </p>
+    <p>Пример программы</p>
+    <listing>
+    while (<>) {
+     $org=$_;
+     s/\\["']//g;
+     s/\/\/[^:].*//;
+     s/\/\*.*\*\///g;
+     if ($comment == 1) {
+       if (s/.*\*\///) {
+         $comment = 0;
+       }
+       else {
+         next;
+       }
+     }
+     if (s/\/\*.*//) {
+       $comment = 1;
+     }
+     if (/^\s*#/) {
+       next;
+     }
+    }</listing>
+</body>
+</html>
