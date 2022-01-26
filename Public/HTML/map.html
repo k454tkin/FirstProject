@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag map</title>
+    <style type="text/css">
+        #title {
+         line-height: 0; /* Изменяем межстрочное расстояние */
+        }
+        #title img {
+         border: none; /* Убираем рамку вокруг изображения */
+        }
+       </style>
+</head>
+<body>
+    <h1>Тег "map"</h1>
+    <h3>Описание:</h3>
+    <p>
+        Тег &lt;map&gt; служит контейнером для элементов &lt;area&gt;, которые определяют активные области для карт-изображений. 
+        Такие области устанавливают невидимые зоны на изображении, являющиеся ссылками на HTML-документы. 
+        Цель использования тега &lt;map&gt; — в связывании тега &lt;img&gt; с клиентской картой-изображением. 
+        Эта связь определяется применением единого идентификатора как в теге &lt;img&gt;, задаваемого атрибутом usemap, так и в теге &lt;map&gt;, устанавливаемого атрибутом name.<br>
+        Синтаксис <br>
+        &lt;map name="имя"&gt;<br>&lt;area атрибуты&gt;<br>&lt;/map<br>
+        <h1>Следы невиданных зверей</h1>
+        <main>
+        История о том, как возле столовой появились загадочные розовые следы с шестью пальцами, и почему это случилось. 
+        </main>
+        Атрибут name<br>
+        Имя идентификатора, которое однозначно определяет карту-изображение. 
+        Значение атрибута name тега &lt;map&gt; должно соответствовать имени в usemap. 
+        При этом значение атрибута usemap тега &lt;img&gt; начинается с символа решетки.<br>
+        Синтаксис <br>
+        &lt;map name="идентификатор"&gt;...&lt;/map<br>
+    </p>
+    <div id="title"><img src="Images/ecctitle.png" width="640" height="158" 
+        alt="Детский образовательный центр"><br>
+       <img src="Images/navigate.png" width="640" height="30" alt="Навигация по сайту"
+        usemap="#Navigation"></div>
+       <p><map id="Navigation" name="Navigation">
+        <area shape="poly" coords="113,24,211,24,233,0,137,0" href="inform.html" alt="Информация">
+        <area shape="poly" coords="210,24,233,0,329,0,307,24" href="activity.html" alt="Мероприятия">
+        <area shape="poly" coords="304,24,385,24,407,0,329,0" href="depart.html" alt="Отделения">
+        <area shape="poly" coords="384,24,449,24,473,0,406,0" href="techinfo.html" alt="Техническая информация">
+        <area shape="poly" coords="449,24,501,24,525,0,473,0" href="study.html" alt="Обучение">
+        <area shape="poly" coords="501,24,560,24,583,0,525,0" href="work.html" alt="Работа">
+        <area shape="poly" coords="560,24,615,24,639,0,585,0" href="misk.html" alt="Разное">
+       </map></p>
+       <p><img src="images/europe.png" alt="Европа" width="422" 
+        height="387" usemap="#Map">
+      <map name="Map">
+       <area shape="poly" coords="34,83,42,90,52,87,64,85,71,81,79,87,84,95, 75,110,61,120,42,116,37,110,25,94,32,82" href="is.html" alt="Исландия">
+       <area shape="poly" coords="168,262,173,254,180,254,207,272,201,290,206,309, 197,318,182,316,182,323,165,320,152,317,154,292,138,276,168,263" href="fr.html" alt="Франция">
+       <area shape="poly" coords="250,223,264,217,274,222,295,221,298,235,301,257, 290,269,274,268,247,254,243,241,243,241" href="pl.html" alt="Польша">
+      </map></p>
+</body>
+</html>
