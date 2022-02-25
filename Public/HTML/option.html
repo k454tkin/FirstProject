@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag option</title>
+</head>
+
+<body>
+    <header>
+        <h1>Тег "option"</h1>
+    </header>
+    <main>
+        <h3>Описание:</h3>
+        <p>
+            Тег &lt;option&gt; определяет отдельные пункты списка, создаваемого с помощью контейнера &lt;select&gt;.
+            Ширина списка определяется самым широким текстом, указанным в теге &lt;option&gt;, а также может изменяться
+            с помощью стилей. Если планируется отправлять данные списка на сервер, то требуется поместить элемент
+            &lt;select&gt; внутрь формы. Это также необходимо, когда к данным списка идет обращение через скрипты.<br>
+            Синтаксис <br>
+            &lt;select&gt;<br>
+            &lt;option&gt;элемент нумерованного списка&lt;/option&gt;<br>
+            &lt;option&gt;элемент нумерованного списка&lt;/option&gt;<br>
+            &lt;/select&gt;
+        </p>
+        <h3>Атрибуты:</h3>
+        <p>
+            disabled
+            Заблокировать для доступа элемент списка.<br>
+            label
+            Указание метки пункта списка.<br>
+            selected
+            Заранее устанавливает определенный пункт списка выделенным.<br>
+            value
+            Значение пункта списка, которое будет отправлено на сервер или прочитано с помощью скриптов.
+        </p>
+    </main>
+    <form action="option1.php">
+        <p><select size="3" name="hero">
+                <option disabled>Выберите героя</option>
+                <option value="t1" selected>Чебурашка</option>
+                <option value="t2">Крокодил Гена</option>
+                <option value="t3">Шапокляк</option>
+                <option value="t4">Крыса Лариса</option>
+            </select></p>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+    <h3> <a href="../../index.html">Вернуться к тегам</a> </h3>
+</body>
+
+</html>
