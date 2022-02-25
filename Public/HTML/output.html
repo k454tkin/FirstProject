@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag output</title>
+</head>
+
+<body>
+    <header>
+        <h1>Тег "output"</h1>
+    </header>
+    <main>
+        <h3>Описание:</h3>
+        <p>
+            Определяет область в которую выводится информация, преимущественно с помощью скриптов.<br>
+            Синтаксис <br>
+            &lt;output&gt;<br>&lt;/output<br>
+            Атрибуты <br>
+            for
+            Определяет идентификатор одного и более элементов для связывания с тегом &lt;output&gt;.<br>
+            form
+            Задает имя формы, которой принадлежит область для вывода.<br>
+            name
+            Задает уникальное имя элемента.<br>
+        </p>
+    </main>
+    <form oninput="result.value=(cm.value/2.54).toFixed(2)">
+        <p>Введите длину в сантиметрах:
+            <input type="number" name="cm" autofocus>
+        </p>
+        <p>Длина в дюймах: <output name="result">0</output></p>
+    </form>
+    <h3> <a href="../../index.html">Вернуться к тегам</a> </h3>
+</body>
+
+</html>
