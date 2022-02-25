@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag optgroup</title>
+</head>
+
+<body>
+    <header>
+        <h1>Тег "optgroup"</h1>
+    </header>
+    <main>
+        <h3>Описание:</h3>
+        <p>
+            Тег &lt;optgroup&gt; представляет собой контейнер, внутри которого располагаются теги &lt;option&gt;
+            объединенные в одну группу. Особенностью тега &lt;optgroup&gt; является то, что он не выделяется как обычный
+            элемент списка, акцентируется с помощью жирного начертания, а все элементы, входящие в этот контейнер,
+            смещаются вправо от своего исходного положения.<br>
+            Синтаксис <br>
+            &lt;select&gt;<br>
+            &lt;optgroup label="..."&gt;<br>
+            &lt;option&gt;...&lt;/option&gt;<br>
+            &lt;/optgroup&gt;<br>
+            &lt;/select&gt;
+        </p>
+        <form action="handler.php">
+            <p><select>
+                    <optgroup label="Цвет">
+                        <option value="c1">Апельсиновый</option>
+                        <option value="c2">Лимонный</option>
+                        <option value="c3">Персиковый</option>
+                    </optgroup>
+                    <optgroup label="Тон">
+                        <option value="s1">Светлый</option>
+                        <option value="s2">Нормальный</option>
+                        <option value="s3">Темный</option>
+                    </optgroup>
+                </select></p>
+            <p><input type="submit" value="Отправить"></p>
+        </form>
+        <h3>Атрибуты:</h3>
+        <ol>
+            <p>
+                <li>disabled<br>
+                    Блокирует доступ к группе списка, при этом группа отображается другим цветом (обычно серым) и
+                    недоступна для выбора.<br>
+                    Синтаксис <br>
+                    &lt;optgroup disabled&gt;...&lt;/optgroup&gt;
+                </li>
+            </p>
+            <p>
+                <li>label<br>
+                    Текст, который будет входить в список в виде заголовка группы. Это обычная текстовая строка без
+                    всяких кодов HTML.<br>
+                    Синтаксис <br>
+                    &lt;optgroup label="текст"&gt;...&lt;/optgroup&gt;<br>
+                </li>
+            </p>
+        </ol>
+    </main>
+
+    <h3> <a href="../../index.html">Вернуться к тегам</a> </h3>
+</body>
+
+</html>
