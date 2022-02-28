@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag source</title>
+</head>
+
+<body>
+    <header>
+        <h1>Тег "source"</h1>
+    </header>
+    <main>
+        <h3>Описание:</h3>
+        <p>
+            Вставляет звуковой или видеофайл для тегов &lt;audio&gt; и &lt;video&gt;. Обобщенно такие файлы называются
+            медийными.<br>
+            Синтаксис <br>
+            &lt;audio&gt;<br>
+            &lt;source src="URL"&gt;<br>
+            &lt;/audio&gt;<br>
+            &lt;video&gt;<br>
+            &lt;source src="URL"&gt;<br>
+            &lt;/video&gt;<br>
+        </p>
+        <h3>Атрибуты:</h3>
+        <p>
+            media
+            Определяет устройство, для которого будет воспроизводиться файл.<br>
+            src
+            Адрес файла.<br>
+            type
+            MIME-тип медийного источника.<br>
+        </p>
+    </main>
+    <video width="400" height="300" controls="controls">
+        <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+        <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
+        Тег video не поддерживается вашим браузером. <a href="video/duel.mp4">Скачайте видео</a>.
+    </video>
+    <h3> <a href="../../index.html">Вернуться к тегам</a> </h3>
+</body>
+
+</html>
