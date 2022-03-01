@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag track</title>
+</head>
+
+<body>
+    <header>
+        <h1>Тег "track"</h1>
+    </header>
+    <main>
+        <h3>Описание:</h3>
+        <p>
+            Позволяет авторам указать текстовую дорожку для медийных элементов &lt;audio&gt; и &lt;video&gt;. Такая
+            дорожка обычно содержит субтитры на разных языках, комментарии, заголовки и др.<br>
+            Синтаксис <br>
+            &lt;audio&gt;<br>
+            &lt;track kind | src | srclang | label | default&gt;<br>
+            &lt;/audio&gt;<br>
+            <br>
+            &lt;video&gt;<br>
+            &lt;track kind | src | srclang | label | default&gt;<br>
+            &lt;/video&gt;
+        </p>
+        <h3>Атрибуты:</h3>
+        <p>
+            kind
+            Указывает тип дорожки.<br>
+            src
+            Путь к файлу с дорожкой.<br>
+            srclang
+            Язык дорожки.<br>
+            label
+            Отображаемое название дорожки. Если этот атрибут не указан, браузер станет использовать значение, которое
+            применяется у него по умолчанию, например «untitled1».<br>
+            default
+            Наличие этого атрибута указывает, что данная дорожка предпочтительна и должна быть выбрана по умолчанию.
+            Только одна дорожка может иметь атрибут default.
+        </p>
+    </main>
+    <video width="500" height="400" controls>
+        <source src="video/jane.ogv" type='video/ogg; codecs="theora, vorbis"'>
+        <source src="video/jane.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        <source src="video/jane.webm" type='video/webm; codecs="vp8, vorbis"'>
+        <track kind="subtitles" src="video/jane.en.srt" srclang="en" label="English">
+        <track kind="subtitles" src="video/jane.ua.srt" srclang="uk" label="Український">
+        <track kind="subtitles" src="video/jane.ru.srt" srclang="ru" label="Русский">
+        Тег video не поддерживается вашим браузером.
+    </video>
+    <h3> <a href="../../index.html">Вернуться к тегам</a> </h3>
+</body>
+
+</html>
