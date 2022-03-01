@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag xmp</title>
+</head>
+
+<body>
+    <header>
+        <h1>Тег "xmp"</h1>
+    </header>
+    <main>
+        <h3>Описание:</h3>
+        <p>
+            Отображает содержимое контейнера «как есть» и шрифтом фиксированной ширины. Пока тег &lt;xmp&gt; не закрыт,
+            все теги внутри него отображаются как обычный текст.<br>
+            Синтаксис <br>
+            &lt;xmp&gt;Текст&lt;/xmp&gt;<br>
+        </p>
+    </main>
+    <p>Пример программы</p>
+    <xmp>
+        while (<>) {
+            $org=$_;
+            s/\\["']//g;
+            s/\/\/[^:].*//;
+            s/\/\*.*\*\///g;
+            if ($comment == 1) {
+            if (s/.*\*\///) {
+            $comment = 0;
+            }
+            else {
+            next;
+            }
+            }
+            if (s/\/\*.*//) {
+            $comment = 1;
+            }
+            if (/^\s*#/) {
+            next;
+            }
+            }</xmp>
+    <h3> <a href="../../index.html">Вернуться к тегам</a> </h3>
+</body>
+
+</html>
