@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag textarea</title>
+</head>
+
+<body>
+    <header>
+        <h1>Тег "textarea"</h1>
+    </header>
+    <main>
+        <h3>Описание:</h3>
+        <p>
+            Поле &lt;textarea&gt; представляет собой элемент формы для создания области, в которую можно вводить
+            несколько строк текста. В отличие от тега &lt;input&gt; в текстовом поле допустимо делать переносы строк,
+            они сохраняются при отправке данных на сервер. Между тегами &lt;textarea&gt; и &lt;/textarea&gt; можно
+            поместить любой текст, который будет отображаться внутри поля.<br>
+            Синтаксис <br>
+            &lt;textarea атрибуты&gt;<br>Текст&lt;/textarea&gt;<br>
+        </p>
+        <h3>Атрибуты:</h3>
+        <p>
+            accesskey
+            Переход к полю с помощью сочетания клавиш.<br>
+            autofocus
+            Автоматическое получение фокуса.<br>
+            cols
+            Ширина поля в символах.<br>
+            disabled
+            Блокирует доступ и изменение элемента.<br>
+            form
+            Связывает текстовое поле с формой по её идентификатору.<br>
+            maxlength
+            Максимальное число введенных символов.<br>
+            name
+            Имя поля, предназначено для того, чтобы обработчик формы мог его идентифицировать.<br>
+            placeholder
+            Указывает замещающийся текст.<br>
+            readonly
+            Устанавливает, что поле не может изменяться пользователем.<br>
+            required
+            Обязательное для заполнения поле.<br>
+            rows
+            Высота поля в строках текста.<br>
+            tabindex
+            Порядок перехода между элементами при нажатии на клавишу Tab.<br>
+            wrap
+            Параметры переноса строк.
+        </p>
+    </main>
+    <form action="textarea1.php" method="post">
+        <p><b>Введите ваш отзыв:</b></p>
+        <p><textarea rows="10" cols="45" name="text"></textarea></p>
+        <p><input type="submit" value="Отправить"></p>
+    </form>
+    <h3> <a href="../../index.html">Вернуться к тегам</a> </h3>
+</body>
+
+</html>
