@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag th</title>
+    <style type="text/css">
+        table {
+            border-collapse: collapse;
+            /* Отображать двойные линии как одинарные */
+        }
+
+        th {
+            background: #ccc;
+            /* Цвет фона */
+            text-align: left;
+            /* Выравнивание по левому краю */
+        }
+
+        td,
+        th {
+            border: 1px solid #800;
+            /* Параметры границы */
+            padding: 4px;
+            /* Поля в ячейках */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Тег "th"</h1>
+    </header>
+    <main>
+        <h3>Описание:</h3>
+        <p>
+            Тег &lt;th&gt; предназначен для создания одной ячейки таблицы, которая обозначается как заголовочная. Текст
+            в такой ячейке отображается браузером обычно жирным шрифтом и выравнивается по центру. Тег &lt;th&gt; должен
+            размещаться внутри контейнера &lt;tr&gt;, который в свою очередь располагается внутри тега
+            &lt;table&gt;.<br>
+            Синтаксис <br>
+            &lt;table&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;th&gt;...&lt;/th&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;/table&gt;
+        </p>
+        <h3>Атрибуты:</h3>
+        <p>
+            abbr
+            Краткое описание содержимого ячейки.<br>
+            align
+            Определяет выравнивание содержимого ячейки по горизонтали.<br>
+            axis
+            Группирует ячейки связанные между собой похожей информацией.<br>
+            background
+            Задает фоновый рисунок в ячейке.<br>
+            bgcolor
+            Цвет фона ячейки.<br>
+            bordercolor
+            Цвет рамки.<br>
+            char
+            Выравнивает содержимое ячейки по заданному символу.<br>
+            charoff
+            Смещает содержимое ячейки относительно заданного символа.<br>
+            colspan
+            Объединяет горизонтальные ячейки.<br>
+            headers
+            Позволяет связать ячейки таблицы с заголовками в речевых браузерах.<br>
+            height
+            Высота ячейки.<br>
+            nowrap
+            Запрещает перенос строк.<br>
+            rowspan
+            Объединяет вертикальные ячейки.<br>
+            scope
+            Позволяет связать ячейки простой таблицы с заголовками в речевых браузерах.<br>
+            valign
+            Выравнивание содержимого ячейки по вертикали.<br>
+            width
+            Ширина ячейки.
+        </p>
+    </main>
+    <table width="100%" cellspacing="0" border="1">
+        <tr>
+            <th>Браузер</th>
+            <th colspan="3">Internet Explorer</th>
+            <th colspan="3">Opera</th>
+            <th colspan="2">Firefox</th>
+        </tr>
+        <tr>
+            <th>Версия</th>
+            <td>5.5</td>
+            <td>6.0</td>
+            <td>7.0</td>
+            <td>7.0</td>
+            <td>8.0</td>
+            <td>9.0</td>
+            <td>1.0</td>
+            <td>2.0</td>
+        </tr>
+        <tr>
+            <th>Поддерживается</th>
+            <td>Да</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td>Да</td>
+        </tr>
+    </table>
+    <h3> <a href="../../index.html">Вернуться к тегам</a> </h3>
+</body>
+
+</html>
